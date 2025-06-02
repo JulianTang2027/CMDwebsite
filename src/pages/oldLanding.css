@@ -1,0 +1,234 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+.content {
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+/* On-scroll animation */
+.contentParagraph {
+  filter: blur(5px);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all ease-out 0.7s;
+}
+
+/* On-scroll animation */
+.contentParagraph.visible {
+  filter: blur(0px);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contentLine {
+  width: 20%;
+  height: 1px;
+  background-color: #333;
+  margin: 0 auto;
+  /* On-scroll animation */
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(10px);
+  transition: all 0.5s;
+}
+
+/* On-scroll animation */
+.contentLine.visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.industryCoverage {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+
+.industryCoverageImage {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.industryCoverageContent {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  justify-content: center;
+}
+
+.industryCoverageContent h1 {
+  font-size: 3rem;
+  font-family: "Roboto";
+  font-weight: 200;
+  text-align: center;
+  /* On-scroll animation */
+  opacity: 0;
+  transform: translateY(10px);
+  filter: blur(5px);
+  transition: all ease-out 0.7s;
+}
+
+/* On-scroll animation */
+.industryCoverageContent h1.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.industryCoverageLine {
+  width: 80%;
+  height: 1px;
+  background-color: #333;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all ease-out 1s;
+}
+
+/* On-scroll animation */
+.industryCoverageLine.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.industryCoverageContent p {
+  display: block;
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 100;
+  text-align: left;
+  margin: 2rem auto 0; /* Top margin 2rem, auto left/right, 0 bottom */
+  /* On-scroll animation */
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(10px);
+  transition: all 0.7s ease-out;
+}
+
+.industryCoverage p.visible {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0);
+}
+
+.industryCoverageContent button {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: black;
+  border: 1px solid #333;
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* On-scroll animation */
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(10px);
+}
+
+.industryCoverageContent button.visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.industryCoverageContent button:hover {
+  background-color: #333;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news {
+  min-height: 70vh;
+}
+
+.news h1 {
+  margin: 5rem auto 5rem;
+  font-size: 3rem;
+  font-family: "Roboto";
+  font-weight: 200;
+  text-align: center;
+  color: black;
+  /* On-scroll animation */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.7s;
+  filter: blur(5px);
+}
+
+.news h1.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.careers {
+  display: flex;
+  margin-top: 0;
+  padding: 0 0;
+  background-color: #0b0b45;
+  min-height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.careers h1 {
+  margin: auto auto;
+  font-size: 2rem;
+  font-family: "Roboto";
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  /* On-scroll animation */
+  opacity: 0;
+  transform: translateY(10px);
+  filter: blur(5px);
+  transition: all 0.7s;
+}
+
+.careers h1.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.team {
+  min-height: 60vh;
+}
+
+.team img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+}

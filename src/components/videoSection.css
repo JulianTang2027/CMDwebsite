@@ -1,0 +1,39 @@
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.introHeader {
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 200;
+}
+
+.Intro {
+  font-size: 1.5rem;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* .introCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navy-blue);
+  margin: 15rem;
+  width: 80vw;
+  height: 500px;
+  margin: 0 auto;
+  box-shadow: 5px;
+  border-radius: 2rem;
+} */
